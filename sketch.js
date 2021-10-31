@@ -8,7 +8,7 @@ function setup() {
 function draw() {
   background(0);
   time++;
-  if (time % 60 == 1 && particles.length < 20) 
+  if (time % 60 == 1 && particles.length < 20)
     particles.push(new Particle(2));
 
   for (let i = 0; i < particles.length; i++) {
@@ -48,5 +48,9 @@ function draw() {
     particles[0].vel.limit(5);
   } else {
     interaction(particles.length - 1, 0, speedLimit);
+  }
+
+  if(keyIsPressed){
+    Die....
   }
 }
